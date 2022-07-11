@@ -1,6 +1,6 @@
 
 
-$("#nav-bills-tab").click(function(){
+$("#nav-films-tab").click(function(){
     supplierDetailsBillsFillView();
     console.log(getFilms());
 });
@@ -12,8 +12,8 @@ $("#fileUploaderSave").click(function(){
 });
 
 function supplierDetailsBillsFillView(){
-    if ( ! $.fn.DataTable.isDataTable( '#supplierBills' ) ) {
-        table = $('#supplierBills').DataTable( {
+    if ( ! $.fn.DataTable.isDataTable( '#films' ) ) {
+        table = $('#films').DataTable( {
             responsive:true,
             dom: 'Bfrtip',
             buttons: [
@@ -87,7 +87,7 @@ function supplierDetailsBillsFillView(){
             ]
         } );
         
-        $('#supplierBills tbody').on( 'click', '.preview', function () {
+        $('#films tbody').on( 'click', '.preview', function () {
             // var bill = billsTable.row( $(this).parents('tr') ).data();
             var supplierBill = table.row( $(this).parents('tr') ).data();
             alert(supplierBill['name'])
@@ -111,7 +111,7 @@ function supplierDetailsBillsFillView(){
         });
         // supplierBill = table.row( $(this).parents('tr') ).data();
 
-        // $('#supplierBills tbody').on( 'click', '.download', function () {
+        // $('#films tbody').on( 'click', '.download', function () {
         //     var supplierBill = table.row( $(this).parents('tr') ).data();
         //     path = "documents/supplier-bills/"+supplier["id"]+"/"+supplierBill[ "name" ]+"."+supplierBill["file_extension"];
         //     var a = document.createElement("a");
@@ -121,7 +121,7 @@ function supplierDetailsBillsFillView(){
         //     a.click();
         // } );
 
-        // $('#supplierBills tbody').on( 'click', '.edit', function () {
+        // $('#films tbody').on( 'click', '.edit', function () {
         //     var supplierBill = table.row( $(this).parents('tr') ).data();
         //     // alert(supplierBill)
         //     $("#documentEditModalFileName").html('<input id="documentEditModalFileInputName" class="form-control text-center" value="'+ supplierBill["name"] +'"></input>');
@@ -146,7 +146,7 @@ function supplierDetailsBillsFillView(){
         // } );
 
 
-        // $('#supplierBills tbody').on( 'click', '.delete', function () {
+        // $('#films tbody').on( 'click', '.delete', function () {
         //     var supplierBill = table.row( $(this).parents('tr') ).data();
         //     $("#documentDisableModalFileName").html("Suppliere: "+supplier["name"]+"<br>Archivo: "+supplierBill["name"]+"."+supplierBill["file_extension"]);
         //     $("#documentDisable").modal("toggle");

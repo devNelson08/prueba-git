@@ -54,6 +54,6 @@
     
     <script src="js/index.js"></script>
     
-    <?php require "html/supplierBillNewModal.php"; ?>
+    <?php //require "html/filmsNewModal.php"; ?>
   </body>
 </html>
