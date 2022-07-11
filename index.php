@@ -21,7 +21,7 @@
         <!-- Content here -->
 
         <!-- Modal -->
-        <?php require "html/modal.php"; ?>
+        <?php require "html/filmsNewModal.php"; ?>
   
   
         <!-- Navbar -->
