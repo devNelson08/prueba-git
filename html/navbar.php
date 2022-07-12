@@ -18,8 +18,8 @@
 
         <div class="card-body main-card-body overflow-auto">
           <form class="form-inline m-1">
-            <button class="btn btn-outline-primary m-1 supplierBillNewModalOpen" id="supplierBillNewOpenModal"
-              data-bs-toggle="modal" data-bs-target="#supplierBillNewModal" type="button">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Registrar película
             </button>
           </form>
@@ -49,3 +49,5 @@
     <!-- Tabs content -->
   </div>
 </div>
+
+<?php require "html/modals/filmsNewModal.php"; ?>

@@ -21,7 +21,7 @@
         <!-- Content here -->
 
         <!-- Modal -->
-        <?php require "html/filmsNewModal.php"; ?>
+        <?php //require "html/filmsNewModal.php"; ?>
   
   
         <!-- Navbar -->
@@ -30,7 +30,7 @@
         </div>            
         
     </main>
-    
+    <?php require "html/modals/selectionModal.php"; ?>
     
     
     <!-- Option 1: Bootstrap Bundle with Popper -->
