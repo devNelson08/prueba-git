@@ -30,7 +30,7 @@
         </div>            
         
     </main>
-    <?php require "html/modals/selectionModal.php"; ?>
+    <?php require "html/modals/previewFilmModal.php"; ?>
     
     
     <!-- Option 1: Bootstrap Bundle with Popper -->
