@@ -77,12 +77,26 @@ Date.prototype.toDateInputValue = (function() {
 /////////////////////////////////////////////////////
 
 
-// CRUD Suppliers
+// get films
 function getFilms() {
     return ajaxGet("ajax/getFilms.php");
 }
 
 
+// CRUD films
+function addFilm(name, categoryId, directorId) {
+    return ajaxPost("ajax/addFilm.php", {
+        "name": name,
+        "category_id": categoryId,
+        "director_id": directorId,
+        // 'signup_date': signupDate,
+    });
+}
+
+// Directors
+function getDirectors(){
+    return ajaxGet("ajax/getDirectors.php");
+}
 
 //add search engine in container
 

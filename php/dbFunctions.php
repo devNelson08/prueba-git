@@ -44,6 +44,34 @@
 		}
 
 
+		//Get Directors list 
+		function getDirectors(){
+			$result = mysqli_query($this->connection,"SELECT * FROM `directors`");
+			$directors = array();
+			while($director =  mysqli_fetch_assoc($result)){
+				$directors[] = $director;
+			}
+			return $directors;
+		}
+
+
+		// Add a films 
+		function addFilm($name, $directorId, $categoryId){
+			$signupDate = date('Y-m-d H:i:s');
+			if($signupDate == null){
+				$signupDate="NULL";
+			} else {
+				$signupDate="'".$signupDate."'";
+			}
+			$result = mysqli_query($this->connection, "INSERT INTO `films`(`name`, `category_id`, `director_id`, `active`) VALUES ('".$name."', '".$directorId."', '".$categoryId."', 1)");
+			if($result){
+				return true;
+			}else{
+				return false;
+			}
+		}
+
+		
 
 		
 	}
