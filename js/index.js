@@ -14,6 +14,7 @@ $("#fileUploaderSave").click(function(){
 function filmsDetailsFillView(){
     if ( ! $.fn.DataTable.isDataTable( '#films' ) ) {
         table = $('#films').DataTable( {
+            order: [[3, 'desc']],
             responsive:true,
             dom: 'Bfrtip',
             buttons: [
@@ -82,7 +83,7 @@ function filmsDetailsFillView(){
                 { "defaultContent": "<a href='#' class='preview mr-2'><i class='fas fa-eye' title='Previsualizar'></i></a>"
                     // +"<a href='#'class='download  mr-2'><i class='fas fa-download' style='width: 20px; height: 20px;color:#2EF522'></i></a>"
                     // +"<a href='#' class='edit mr-2' style='width: 20px; height: 20px;color:#F5F043s'><i class='fas fa-edit'></i></a>"
-                    // +"<a href='#' class='delete ' style='width: 20px; height: 20px;color:#F25C52'><i class='fas fa-trash-alt'></i></a>"
+                    +"<a href='#' class='delete ' style='width: 20px; height: 20px;color:#F25C52'><i class='fas fa-trash-alt'></i></a>"
                 }
             ]
         } );
@@ -94,7 +95,12 @@ function filmsDetailsFillView(){
            
         });
         // film = table.row( $(this).parents('tr') ).data();
-        
+        $('#films tbody').on( 'click', '.delete', function () {
+            // var bill = billsTable.row( $(this).parents('tr') ).data();
+            var film = table.row( $(this).parents('tr') ).data();
+            alert(film['name'])
+           
+        });
         
     } else {
         table.ajax.reload();
