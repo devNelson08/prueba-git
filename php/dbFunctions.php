@@ -54,6 +54,16 @@
 			return $directors;
 		}
 
+		//Disable film
+		function disableFilm($id){
+			$result = mysqli_query($this->connection, "UPDATE `films` SET `active`=0 WHERE `id` = '".$id."'");
+			if($result){
+				return true;
+			}else{
+				return false;
+			}
+		}
+
 
 		// Add a films 
 		function addFilm($name, $directorId, $categoryId){

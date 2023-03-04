@@ -98,7 +98,18 @@ function filmsDetailsFillView(){
         $('#films tbody').on( 'click', '.delete', function () {
             // var bill = billsTable.row( $(this).parents('tr') ).data();
             var film = table.row( $(this).parents('tr') ).data();
-            alert(film['name'])
+            $("#documentDisableModalFileName").html("Cliente: " + film['name']);
+            $("#documentDisable").modal("toggle");
+            $("#documentDisableAccept").off().click(function(){
+                if($("#permanentlyDelete").prop('checked')){
+                    disableFilm("documents/clients/"+film["id"]+"/"+film["name"]+"."+film["category_id"]);
+                    disableFilm(film["id"]);
+                } else {
+                    disableFilm(film["id"]);
+                }
+                
+                table.ajax.reload();
+            });
            
         });
         

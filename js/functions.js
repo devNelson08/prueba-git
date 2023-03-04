@@ -93,6 +93,12 @@ function addFilm(name, categoryId, directorId) {
     });
 }
 
+function disableFilm(id){
+    return ajaxPost("ajax/disableFilm.php", {
+        'id':id,
+    });
+}
+
 // Directors
 function getDirectors(){
     return ajaxGet("ajax/getDirectors.php");
