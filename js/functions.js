@@ -92,12 +92,20 @@ function addFilm(name, categoryId, directorId) {
         // 'signup_date': signupDate,
     });
 }
-
+//Disable film
 function disableFilm(id){
     return ajaxPost("ajax/disableFilm.php", {
         'id':id,
     });
 }
+
+//Delete film
+function deleteFilm(id){
+    return ajaxPost("ajax/deleteFilm.php", {
+        'id':id,
+    });
+}
+
 
 // Directors
 function getDirectors(){

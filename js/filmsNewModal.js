@@ -1,19 +1,19 @@
 $("#departmentNewOpenCreator").on("click", function(){
-    departmentNewFillCreator();
+    filmNewFillCreator();
 });
 $("#filmNewSave").click(function(){
-    departmentNewSave();
+    filmNewSave();
 });
 
 // Function that fills department details with inputs to edit
-function departmentNewFillCreator(){
+function filmNewFillCreator(){
     $("#filmNewName").html('<input id="filmNewInputName" class="form-control text-center" value=""></label>');
     $("#filmNewCategory").html('<input id="filmNewInputCategory" class="form-control text-center" value=""></label>');
     $("#filmNewDirector").html('<input id="filmNewInputDirector" class="form-control text-center" value=""></label>');
 }
 
 // Function that set a department with the information in the formulary
-function departmentNewSave(){
+function filmNewSave(){
     var name = $("#filmNewInputName").val();
     var categoryId = $("#filmNewInputCategory").val();
     var directorId = $("#filmNewInputDirector").val();
