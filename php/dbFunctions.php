@@ -54,6 +54,18 @@
 			return $directors;
 		}
 
+		
+
+		//Get Categories list
+		function getCategories(){
+			$result = mysqli_query($this->connection,"SELECT * FROM `categories`");
+			$categories = array();
+			while($category =  mysqli_fetch_assoc($result)){
+				$categories[] = $category;
+			}
+			return $categories;
+		}
+
 		//Disable film
 		function disableFilm($id){
 			$result = mysqli_query($this->connection, "UPDATE `films` SET `active`=0 WHERE `id` = '".$id."'");

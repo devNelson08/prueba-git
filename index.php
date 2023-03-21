@@ -32,7 +32,7 @@
     </main>
     <?php require "html/modals/previewFilmModal.php"; ?>
     <?php require "html/modals/disableFilm.php"; ?>
-
+    
     <?php require "html/modals/filmsNewModal.php"; ?>
     
     <!-- Option 1: Bootstrap Bundle with Popper -->

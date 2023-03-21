@@ -112,6 +112,11 @@ function getDirectors(){
     return ajaxGet("ajax/getDirectors.php");
 }
 
+// Categories
+function getCategories(){
+    return ajaxGet("ajax/getCategories.php");
+}
+
 //add search engine in container
 
 function searchInputContainer(container,searchInput){

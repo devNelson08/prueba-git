@@ -9,7 +9,7 @@
       <div class="nav nav-tabs" id="myTab" role="tablist">
         <!-- <a class="nav-item nav-link letter_spacing_15 active" id="nav-info-tab" data-bs-toggle="tab" href="#nav-info"
           role="tab" aria-controls="nav-info letter_spacing_15" aria-selected="true">Información</a> -->
-        <a class="nav-item nav-link" id="nav-films-tab" data-bs-toggle="tab" href="#nav-films" role="tab"
+        <a class="nav-item nav-link " id="nav-films-tab" data-bs-toggle="tab" href="#nav-films" role="tab"
           aria-controls="nav-films" aria-selected="false">Peliculas Registradas</a>
       </div>
     </nav>

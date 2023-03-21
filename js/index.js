@@ -1,5 +1,6 @@
 
 
+
 $("#nav-films-tab").click(function(){
     filmsDetailsFillView();
     console.log(getFilms());
@@ -112,9 +113,15 @@ function filmsDetailsFillView(){
             });
            
         });
+
+        $("#filmNewSave").click(function(){
+            // filmNewSave();
+            table.ajax.reload();
+        });
         
     } else {
         table.ajax.reload();
     }
 }
+
 

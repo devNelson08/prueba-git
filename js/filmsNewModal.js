@@ -1,8 +1,9 @@
-$("#departmentNewOpenCreator").on("click", function(){
+$("#filmNewOpenCreator").on("click", function(){
     filmNewFillCreator();
 });
 $("#filmNewSave").click(function(){
     filmNewSave();
+    
 });
 
 // Function that fills department details with inputs to edit

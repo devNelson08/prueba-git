@@ -34,76 +34,8 @@
         <!-- Excel api SheetsJS -->
         <script lang="javascript" src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
 
-        <!-- MDB
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js">
-        </script> -->
+      
 
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script> 
-		<script src="js/jspdf.customfonts.min.js"></script> 
-		<script src="js/vfs.js"></script>
-		<script src="js/default_vfs.js"></script> 	
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
-		<script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.1.0/jspdf.plugin.autotable.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.5/pdfobject.min.js" integrity="sha512-K4UtqDEi6MR5oZo0YJieEqqsPMsrWa9rGDWMK2ygySdRQ+DtwmuBXAllehaopjKpbxrmXmeBo77vjA2ylTYhRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     -->
-
-        <!-- <script>
-            // Toastr config
-            toastr.options = {
-                "debug": false,
-                "positionClass": "toast-bottom-center",
-                // "positionClass": "toast-bottom-center",
-                "onclick": null,
-                "fadeIn": 300,
-                "fadeOut": 1000,
-                "timeOut": 4000,
-                "extendedTimeOut": 1000,
-                "preventDuplicates": true,
-                "preventOpenDuplicates": true
-            }
-
-            // Popovers & tooltips config
-            // $(function () {
-            //     $('[data-mdb-toggle="popover"]').popover();
-            //     $('[data-mdb-toggle="tooltip"]').tooltip();
-            //     $('body').tooltip({ selector: '[data-mdb-toggle="tooltip"]' });
-            // })
-
-            // load a locale
-            numeral.register('locale', 'fr', {
-                delimiters: {
-                    thousands: '.',
-                    decimal: ','
-                },
-                abbreviations: {
-                    thousand: 'k',
-                    million: 'm',
-                    billion: 'b',
-                    trillion: 't'
-                },
-                ordinal: function (number) {
-                    return number === 1 ? 'er' : 'ème';
-                },
-                currency: {
-                    symbol: '€'
-                }
-            });
-
-            // switch between locales
-            numeral.locale('fr');
-
-            window.onload = function() {
-                if (window.jQuery) {  
-                    // jQuery is loaded  
-                    $("#loadingSpinner").hide();
-                } else {
-                    // jQuery is not loaded
-                    console.log("jQuery is not loaded");
-                }
-            }
-            
-        </script> -->
 
         </body>
 
